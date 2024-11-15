@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH Project</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body background and layout */
+        body {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: #2d3436;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-out;
+            overflow: hidden; /* Prevents overflow */
+        }
+
+        /* Section heading */
+        h1, h2 {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #d63031;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        /* Content styling */
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #636e72;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px 5px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #0984e3;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            background-color: #6c5ce7;
+        }
+
+        /* Info sections */
+        .info-section {
+            margin-bottom: 20px;
+        }
+
+        /* Key details */
+        .details {
+            background: #f1f2f6;
+            padding: 15px;
+            border-left: 4px solid #d63031;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Table Container */
+        .table-container {
+            max-width: 100%; /* Ensures table fits within the container */
+            overflow-x: auto; /* Horizontal scroll for overflow */
+            margin: 20px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #0984e3;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            min-width: 600px; /* Ensures table has enough width */
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #0984e3;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #dfe6e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Heading Section -->
+        <h1>SIH - Smart India Hackathon</h1>
+
+        <!-- Introduction Section -->
+        <div class="info-section">
+            <h2>What is SIH?</h2>
+            <p>The Smart India Hackathon (SIH) is an initiative to encourage innovative solutions for critical challenges. It brings together students from across India to solve pressing issues faced by different organizations.</p>
+            <a href="https://www.sih.gov.in/" target="_blank" class="button">Official Website</a>
+        </div>
+
+        <!-- Problem Details Section -->
+        <div class="info-section">
+            <h2>Our Problem Details</h2>
+            <div class="details">
+                <strong>Our Problem Statement ID:</strong> SIH1649<br>
+                <strong>Our Title:</strong> Blockchain - Based DDoS Mitigation Using AI<br>
+                <strong>Description:</strong> Out of 500 ideas submitted from institutes across India, 5 teams have been selected at the national level to tackle this challenge.
+            </div>
+            <p>Across Anna University’s two campuses, two teams from the Madras Institute of Technology, Chromepet, Chennai, have been selected for SIH '24. One of these teams (6 members) is ours.</p>
+        </div>
+
+        <!-- Nodal Center Details Section -->
+        <div class="info-section">
+            <h1>Date: 11th DEC and 12th DEC</h1>
+            <h2>Nodal Center Details</h2>
+            <p><strong>Organisation Name:</strong> Ministry of Defence SAG, DRDO</p>
+
+            <div class="table-container">
+                <h2>Team Members</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Member Role</th>
+                            <th>Member Name</th>
+                            <th>Member Email</th>
+                            <th>Member Phone</th>
+                            <th>Member Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LEADER</td>
+                            <td>Nagavignesh M</td>
+                            <td>mnaga.1729@gmail.com</td>
+                            <td>9786618519</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td>TEAM_MEMBER</td>
+                            <td>Vijay GK</td>
+                            <td>vijaygk113@gmail.com</td>
+                            <td>8637444485</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td>TEAM_MEMBER</td>
+                            <td>Udhya Kumar K</td>
+                            <td>udhyak2004@gmail.com</td>
+                            <td>9150653370</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td>TEAM_MEMBER</td>
+                            <td>Vinoth Kumar R</td>
+                            <td>vinothkumarshivasankari@gmail.com</td>
+                            <td>9150498340</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td>TEAM_MEMBER</td>
+                            <td>Rishi Kumar B</td>
+                            <td>bprtsp2022@gmail.com</td>
+                            <td>9952033439</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td>TEAM_MEMBER</td>
+                            <td>Bhavana B</td>
+                            <td>bhavanaplatina98@gmail.com</td>
+                            <td>8754183275</td>
+                            <td>Female</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>Department Name:</strong> SAG, DRDO</p>
+            <p><strong>Location:</strong> Vivekananda Institute of Professional Studies - Technical Campus, Delhi, 110034</p>
+            <a href="https://maps.app.goo.gl/GPpQaVenk3U47tRA6" target="_blank" class="button">Location on Google Maps</a>
+            <a href="https://vips.edu/" target="_blank" class="button">Official College Website</a>
+        </div>
+    </div>
+</body>
+</html>
